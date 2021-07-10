@@ -2,8 +2,8 @@ const {sumAsync, subtractAsync} = require('./math.js')
 
 test("Sum numbers", async () => {
     result = await sumAsync(2, 7)
-    expected = await 10
-    await expect(result).toBe(expected)
+    expected =  10
+    expect(result).toBe(expected)
 })
     
 async function test(title, callback) {
